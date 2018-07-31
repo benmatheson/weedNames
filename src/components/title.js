@@ -39,7 +39,7 @@ componentDidMount () {
 
 	render() {
 		return (
-			<div>
+			<div className="hWrapper">
 				<h1 className="header"><span className ="inline"> Alaska's </span> <span className ="titleHighlight">{this.state.name}</span><br /><span className ="inline"> Marijuana Business Names</span></h1>
 				
 			</div>

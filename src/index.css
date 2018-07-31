@@ -95,6 +95,11 @@ border-radius: 10px;
 }
 
 
+.hWrapper {
+
+text-align: center;
+
+}
 .header, .subHeader {
 
 	font-family: "overpass mono", monospace;
@@ -102,7 +107,8 @@ border-radius: 10px;
 	/*background-color: rgba(255,255,255,.48);*/
 	/*mix-blend-mode: multiply;*/
 	background-blend-mode: multiply;
-	text-align: center;
+	text-align: left;
+	display: inline-block;
 	justify-content: center;
 	/*transform: translateX(10%);*/
 	/*background-color: rgba(190,23,55,.18);*/
@@ -221,7 +227,7 @@ transform: skew(399deg, 883deg);
 animation: ani .4s ease;
 animation-direction: alternate;
  animation-iteration-count: infinite;
-
+cursor: pointer;
 
 }
 
@@ -356,14 +362,22 @@ margin: var(--pickerMargin);
 display: flex;
 /*flex-direction: column;*/
 flex-wrap: wrap;
-justify-content: space-around;
 justify-content: left;
+justify-content: space-between;
+/*justify-content: flex-start;*/
+/*justify-content: left;*/
 max-width: 100%;
 /*margin-left: 14%;*/
 /*min-height: 50vh;*/
 
 
+/*border: dashed red;*/
+}
 
+.flexContainer:after {
+  content: "";
+  flex: auto;
+  width: 190px;
 }
 
 .flexPicker {
@@ -371,9 +385,10 @@ max-width: 100%;
 
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
+flex-wrap: wrap;/*
 justify-content: space-around;
-justify-content: left;
+justify-content: space-between;*/
+/*justify-content: left;*/
 max-width: 60%;
 font-family: "overpass mono", monospace;
 /*font-family: sans-serif;*/
@@ -399,6 +414,7 @@ border-radius: 3px;
 .pickers{
 
 
+cursor: pointer;
 
 /*font-family: sans-serif;*/
 /*height: 40px;*/
@@ -430,10 +446,10 @@ color: green;
 .center {
 	margin:auto;
 
-padding-left: 2%;
+/*padding-left: 2%;
 padding-right: 2%;
-/*margin:auto;*/
-width: 100%;
+*//*margin:auto;*/
+/*width: 100%;*/
 
 }
 
@@ -451,10 +467,11 @@ transition: all ease .3s;
 
 box-shadow: 2px 2px 2px 3px rgba(0,0,0,.9);
      
-width: 17%;
-min-height: 70px;
+/*width: 17%;*/
+width: 190px;
+min-height: 80px;
 /*border: dashed red .4px;*/
-font-family: monospace;
+/*font-family: monospace;*/
 /*text-align: center;*/
 /*background: linear-gradient(#9BD59D, limegreen);*/
 background-color: #9BD59D;
@@ -466,8 +483,8 @@ padding: .4% .4% .4% .4%;
 font-size: 1.3rem;
 line-height: 90%;
 font-weight: 900;
-min-height: 30px;
-margin: 5px;
+/*min-height: 30px;*/
+margin: 7px;
 text-transform: capitalize;
 font-family: "overpass mono", sans-serif;
 /*font-family: sans-serif;*/
