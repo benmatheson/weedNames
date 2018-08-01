@@ -14,7 +14,7 @@ constructor(props){
 
 render() {
 
-return (<div className="center flexContainer">{this.props.dat.map(d=><div className="flexItem">{d.dba}<span className="grid--span--lc"> {d.license_type} </span><span className="grid--span--lc"> {d.City} </span></div>)}</div> )
+return (<div className="center flexContainer">{this.props.dat.map(d=><div className="flexItem">{d.dba}<span className="grid--span--tp"> {d.license_type} </span><span className="grid--span--lc"> {d.City} </span></div>)}</div> )
 
 
 }

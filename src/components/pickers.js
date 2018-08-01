@@ -32,7 +32,7 @@ render(){
 
 
 console.log(weedTypes);
-return (<div className='center flexPicker'><span id="subheader">⤵ Click a Weed Name Theme to Explore Businesses ⤵</span>
+return (<div className='center flexPicker'><span id="subheader">⤵ Click a Weed Name Theme to Explore Business Names ⤵</span>
 {weedTypes.map(d=><div className={`pickers ${d}`} onClick = {this.handleClick} datavalue={d}>{d}</div>)}  </div>)
 
 }

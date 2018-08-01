@@ -18,7 +18,7 @@ constructor(props){
 
 
 flip () {
-const weedTypes1 = ["elevated", "rustic", "blazing", "frosty", "grassy", 'green', 'herbal', "noble", "dank", "high", "fuzzy"];
+const weedTypes1 = ["elevated", "edible", "rustic", "blazing","botanical", "premium", "musky", "frosty", "enlightened", "grassy", 'green', 'herbal', "noble", "dank", "high", "fuzzy"];
 
 
 const current =  weedTypes1[Math.floor(Math.random()*(weedTypes1.length))];
@@ -32,7 +32,7 @@ this.setState({name: current});
 componentDidMount () {
 
 
-	setInterval(this.flip,1300);
+	setInterval(this.flip,1100);
 
 }
 
